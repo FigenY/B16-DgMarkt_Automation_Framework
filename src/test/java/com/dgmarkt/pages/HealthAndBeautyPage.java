@@ -41,7 +41,7 @@ public class HealthAndBeautyPage extends BasePage {
     @FindBy(css = "[alt='Fitbit Aria Air Smart Bathroom Scale']")
     public WebElement product_FitBit;
 
-    @FindBy(xpath = "//button[@id='button-cart']")
+    @FindBy(xpath = "a.btn.btn-primary")
     public WebElement product_AddToCart;
 
     @FindBy(xpath = "//div[@class='ui-slider-range ui-widget-header ui-corner-all']")

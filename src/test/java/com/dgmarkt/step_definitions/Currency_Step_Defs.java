@@ -79,9 +79,10 @@ public class Currency_Step_Defs {
     @Then("The user clicks on the Checkout button.")
     public void the_user_clicks_on_the_checkout_button() {
         if (shoppingCartPage.checkOutBtn.isDisplayed()) {
-            shoppingCartPage.checkOutBtn.click();
+            BrowserUtils.clickWithJS(shoppingCartPage.checkOutBtn);
+            BrowserUtils.waitFor(3);
         } else
-            shoppingCartPage.checkOutBtnStock.click();
+            BrowserUtils.clickWithJS(shoppingCartPage.checkOutBtnStock);
     }
 
     @Then("Verify that the total amount is displayed in the selected currency.")

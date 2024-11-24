@@ -15,10 +15,10 @@ public class ShoppingCartPage extends BasePage{
     @FindBy(xpath = "//div[@id='cart']")
     public WebElement shoppingCartBtn;
 
-    @FindBy(xpath = "//a[text()=\"Checkout\"]")
+    @FindBy(xpath = "//a[text()='Checkout'")
     public WebElement checkOutBtnStock;
 
-    @FindBy(xpath = "//strong[text()=\" Checkout\"]")
+    @FindBy(xpath = "//strong[text()='Checkout']")
     public WebElement checkOutBtn;
 
     @FindBy(xpath = "(//td[@class='text-right'])[2]")
